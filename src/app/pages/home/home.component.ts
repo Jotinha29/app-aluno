@@ -9,8 +9,10 @@ export class HomeComponent implements OnInit {
 
   public codigo?: number;
   public nome?: string;
-  public aluno?: string;
+  public aluno: string = "Gustavo";
+  public num1: number[] = [];
 
+  canShow: boolean = true;
 
   constructor() { }
 
@@ -19,11 +21,12 @@ export class HomeComponent implements OnInit {
   }
 
    olaHome() {
-    this.nome = "Jota"
+    this.nome = "João"
     console.log('Olá console')
-    let i;
-    for(i=0; i < 10; i++){
-      console.log(i)
+    this.num1 = [];
+    for(let i=0; i < 2; i++){
+      console.log(i);
+      this.num1.push(i);
       this.codigo = i;
     }
    }

@@ -1,2 +1,17 @@
 <p class="inicio">Home - {{ nome }}</p>
-{{codigo}}
+
+<div *ngFor="let i of num1">
+    <p>Isso foi impresso na página com ngFor</p>
+</div>
+
+<p *ngIf="nome === 'João'">Meu nome é João, mas me chamam de Jota
+    (a condição para imprimir é o nome ser João)
+</p>
+<p *ngIf="aluno !== 'Vantil'">
+    (a condição para imprimir é o aluno ser diferente de Vantil)
+</p>
+<p *ngIf="canShow">
+    (a condição para imprimir é canShow ser true)
+</p>
+
+
